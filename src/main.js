@@ -5,8 +5,8 @@ const $lastLi = $siteList.find('li.last')
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
-  {logo: '/figma.7ec159d4.svg', logoType: 'img', url: 'https://www.figma.com/'},
-  {logo: '/iconfont.7f4f2693.ico', logoType: 'img', url: 'https://www.iconfont.cn/'}
+  {logo: '../src/images/figma.svg', logoType: 'img', url: 'https://www.figma.com/'},
+  {logo: '../src/images/iconfont.ico', logoType: 'img', url: 'https://www.iconfont.cn/'}
 ]
 const simplifyUrl = (url) => {
   return url.replace('https://', '')
