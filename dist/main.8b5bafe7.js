@@ -124,11 +124,11 @@ var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
-  logo: './images/figma.svg',
+  logo: '/images/figma.svg',
   logoType: 'img',
   url: 'https://www.figma.com/'
 }, {
-  logo: './images/iconfont.ico',
+  logo: '/images/iconfont.ico',
   logoType: 'img',
   url: 'https://www.iconfont.cn/'
 }];
@@ -199,4 +199,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.9aa95a89.js.map
+//# sourceMappingURL=main.8b5bafe7.js.map
