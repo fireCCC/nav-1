@@ -124,11 +124,11 @@ var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
-  logo: 'figma.svg',
+  logo: '/images/figma.svg',
   logoType: 'img',
   url: 'https://www.figma.com/'
 }, {
-  logo: 'iconfont.ico',
+  logo: '/images/iconfont.ico',
   logoType: 'img',
   url: 'https://www.iconfont.cn/'
 }];
@@ -148,7 +148,7 @@ var render = function render() {
     var $li;
 
     if (node.logoType === 'img') {
-      $li = $("\n        <li>\n            <a href=\"".concat(node.url, "\">\n                <div class=\"site\">\n                    <div class=\"logo\">\n                        <img src=\"").concat(node.logo, "\" alt=\"\">\n                    </div>\n                    <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                    <div class=\"close\">\n                        <svg class=\"icon\">\n                            <use xlink:href=\"#icon-close\"></use>\n                        </svg>\n                    </div>\n                </div>\n            </a>\n        </li>"));
+      $li = $("\n        <li>\n            <a href=\"".concat(node.url, "\">\n                <div class=\"site\">\n                    <div class=\"logo\">\n                        <img src=").concat(node.logo, " alt=\"\">\n                    </div>\n                    <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                    <div class=\"close\">\n                        <svg class=\"icon\">\n                            <use xlink:href=\"#icon-close\"></use>\n                        </svg>\n                    </div>\n                </div>\n            </a>\n        </li>"));
     } else {
       $li = $("\n        <li>\n            <a href=\"".concat(node.url, "\">\n                <div class=\"site\">\n                    <div class=\"logo\">").concat(node.logo, "</div>\n                    <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                    <div class=\"close\">\n                        <svg class=\"icon\">\n                            <use xlink:href=\"#icon-close\"></use>\n                        </svg>\n                    </div>\n                </div>\n            </a>\n        </li>\n        "));
     }
@@ -199,4 +199,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.5e47a35d.js.map
+//# sourceMappingURL=main.ff870daf.js.map
