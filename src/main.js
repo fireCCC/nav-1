@@ -6,7 +6,9 @@ const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
   {logo: '../src/images/figma.svg', logoType: 'img', url: 'https://www.figma.com/'},
-  {logo: '../src/images/iconfont.ico', logoType: 'img', url: 'https://www.iconfont.cn/'}
+  {logo: '../src/images/iconfont.svg', logoType: 'img', url: 'https://www.iconfont.cn/'},
+  {logo: '../src/images/vue.svg', logoType: 'img', url: 'https://cn.vuejs.org/index.html'},
+  {logo: '../src/images/react.svg', logoType: 'img', url: 'https://zh-hans.reactjs.org/'},
 ]
 const simplifyUrl = (url) => {
   return url.replace('https://', '')
